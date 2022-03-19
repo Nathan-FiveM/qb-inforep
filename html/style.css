@@ -10,7 +10,7 @@
 .scoreboard-block {
   display: none;
   position: absolute;
-  height: 57vh;
+  height: 70vh;
   width: 42vh;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
@@ -21,8 +21,8 @@
   border-image: linear-gradient(var(--angle), #a7a209,#c3252500,#c3252500,#c3252500,#a7a209) 1;
   animation: 3s rotate linear infinite,gradient 15s ease infinite;
   background: linear-gradient(-45deg, #000000, #282828,#000000,#282828,#000000);
-  right: 80vh;
-  top: 20vh;
+  right: 1vh;
+  top: 5vh;
   margin: 1vh;
 }
 

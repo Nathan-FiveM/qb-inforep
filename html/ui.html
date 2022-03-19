@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="./reset.css"/>
+        <title>QBCore Skill Tree</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="scoreboard-block">
+                <div class="scoreboard-header">
+                  <p>Skill Tree</p>
+                </div>
+                <div class="scoreboard-info">
+
+                    <div class="scoreboard-info-beam" style="text-align: center; margin-top: 2px; font-size: 1vh;"> 
+                        <p><i class="fas fa-poll"></i> Job Reputation</p>
+                    </div>
+
+                    <div class="scoreboard-info-beam" data-type="tow">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-car-crash"></i> Tow Trucking:</p>
+                        </div>
+                        <div class="info-beam-status" id="tow" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="hotdogs">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-hotdog"></i> Hotdogs:</p>
+                        </div>
+                        <div class="info-beam-status" id="hotdogs" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="taxi">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-taxi"></i> Taxi:</p>
+                        </div>
+                        <div class="info-beam-status" id="taxi" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="truck">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-truck"></i> Trucking:</p>
+                        </div>
+                        <div class="info-beam-status" id="truck" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+
+                    <div class="scoreboard-info-beam" style="text-align: center; margin-top: 2px; font-size: 1vh;"> 
+                        <p><i class="fas fa-poll"></i> Illegal Reputation</p>
+                    </div>
+
+                    <div class="scoreboard-info-beam" data-type="dealer">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-cannabis"></i> Drug:</p>
+                        </div>
+                        <div class="info-beam-status" id="dealer" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="heist">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-cannabis"></i> Heist:</p>
+                        </div>
+                        <div class="info-beam-status" id="heist" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+
+                    <div class="scoreboard-info-bea" style="text-align: center; padding-top: 5px; font-size: 1.5vh;">
+                        <p></p>
+                    </div>
+                
+                    <div class="scoreboard-info-beam" style="text-align: center; padding-top: 2px; font-size: 1vh;"> 
+                        <p><i class="fas fa-hammer"></i> Crafting Skill Tree</p>
+                    </div>
+
+                    <div class="scoreboard-info-beam" data-type="crafting">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-pencil-ruler"></i> General Crafting:</p>
+                        </div>
+                        <div class="info-beam-status" id="crafting" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="attachment">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-server"></i> Attachment Crafting:</p>
+                        </div>
+                        <div class="info-beam-status" id="attachment" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="guncraftingrep">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-server"></i> Weapon Crafting:</p>
+                        </div>
+                        <div class="info-beam-status" id="guncraftingrep" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="bulletcraftingrep">
+                        <div class="info-beam-title">
+                            <p><i class="fas fa-server"></i> Ammo Crafting:</p>
+                        </div>
+                        <div class="info-beam-status" id="bulletcraftingrep" style="color: #38b70e; text-shadow: 1px 1px 3px black;">0 XP</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

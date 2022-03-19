@@ -5,18 +5,21 @@ local inforepOpen = false
 --COMANDO--
 RegisterCommand('inforep', function()
     if not inforepOpen then
-        QBCore.Functions.TriggerCallback("qb-inforep:server:Reputacion", function(reputacion, drogas, fabricar, componentes, trabajo, grua, hotdogs, taxi, camion)
+        QBCore.Functions.TriggerCallback("qb-inforep:server:Reputation", function(reputation, dealer, heist, crafting, attachment, jobrep, tow, hotdogs, taxi, truck, guncraftingrep, bulletcraftingrep)
             SendNUIMessage({
                 action = "open",
-                reputacion = nil,
-                drogas = drogas,
-                fabricar = fabricar,
-                componentes = componentes,
-                trabajo = nil,
-                grua = grua,
+                reputation = nil,
+                dealer = dealer,
+                crafting = crafting,
+                attachment = attachment,
+                jobrep = nil,
+                tow = tow,
                 hotdogs = hotdogs,
                 taxi = taxi,
-                camion = camion
+                truck = truck,
+                heist = heist,
+                guncraftingrep = guncraftingrep,
+                bulletcraftingrep = bulletcraftingrep
             })
             inforepOpen = true
         end)
